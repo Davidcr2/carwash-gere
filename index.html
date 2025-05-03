@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Carwash Gere</title>
   <link rel="stylesheet" href="styles.css"/>
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -25,10 +27,18 @@
   <section id="galeria">
     <h2>Galería</h2>
     <div class="galeria-grid">
-      <img src="img/mototaxi.jpeg" alt="Lavado de mototaxi" />
-      <img src="img/auto.png" alt="Lavado de auto" />
-      <img src="img/minivan.png" alt="Lavado de minivan" />
-      <img src="img/lavado final.jpg" alt="Lavado finalizado" />
+      <a href="img/mototaxi.jpeg" data-lightbox="galeria" data-title="Lavado de mototaxi">
+        <img src="img/mototaxi.jpeg" alt="Lavado de mototaxi" />
+      </a>
+      <a href="img/auto.png" data-lightbox="galeria" data-title="Lavado de auto">
+        <img src="img/auto.png" alt="Lavado de auto" />
+      </a>
+      <a href="img/minivan.png" data-lightbox="galeria" data-title="Lavado de minivan">
+        <img src="img/minivan.png" alt="Lavado de minivan" />
+      </a>
+      <a href="img/lavado final.jpg" data-lightbox="galeria" data-title="Lavado finalizado">
+        <img src="img/lavado final.jpg" alt="Lavado finalizado" />
+      </a>            
     </div>
   </section>
 
@@ -55,5 +65,7 @@
     <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
   </a>
 
+  <!-- Lightbox2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
